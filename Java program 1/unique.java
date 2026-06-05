@@ -1,0 +1,26 @@
+public class duplicate{
+public static void main(String[] args) {
+String str = "programming";
+for (int i = 0; i < str.length(); i++){
+int count = 0;
+for (int j = 0; j < str.length(); j++) {
+if ( str.charAt(i)==str.charAt(j)) {
+count++;
+else{
+
+}
+}
+System.out.println(str.charAt(i)+":" +count);
+boolean firstOccurrence = true;
+for (int k = 0; k < i; k++) {
+if (str.charAt(i) == str.charAt(k)) {
+firstOccurrence = false;
+break;
+}
+}
+if (count > 1 && firstOccurrence) {
+System.out.println(str.charAt(i) + " : " + count);
+}
+}
+}
+}
